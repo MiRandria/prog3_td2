@@ -19,7 +19,11 @@ public class PlayAgainst {
     private LocalDate datetime;
     private String stadium;
 
-    @OneToOne
-    @JoinColumn(name ="id_team")
-    private TeamModel team;
+    @ManyToOne
+    @JoinColumn(name ="id_team1")
+    private TeamModel team1;
+
+    @ManyToOne
+    @JoinColumn(name = "id_team2")
+    private TeamModel team2;
 }

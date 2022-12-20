@@ -14,5 +14,6 @@ public class PlayAgainstResponse {
     private int id;
     private LocalDate datetime;
     private String stadium;
-    private String team;
+    private String team1;
+    private String team2;
 }

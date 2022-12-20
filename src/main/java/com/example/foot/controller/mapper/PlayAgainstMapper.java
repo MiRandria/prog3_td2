@@ -9,7 +9,8 @@ public class PlayAgainstMapper {
         return PlayAgainstResponse.builder()
                 .id(domain.getId())
                 .datetime(domain.getDatetime())
-                .team(String.valueOf((domain.getTeam())))
+                .team1(String.valueOf((domain.getTeam1())))
+                .team2(String.valueOf((domain.getTeam2())))
                 .build();
     }
 }
